@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./ticTacToe.css">
+</head>
+<body>
+    <h1 class="heading">T i c . T a c . T o e</h1>
+    <div class="players">
+        <span id="resultX">0</span>
+        <input type="text" class="txtPlayer" name="playerXName" id="playerXName" placeholder="Player X Name" >
+        <input type="text" class="txtPlayer" name="playerOName" id="playerOName" placeholder="Player O Name">
+        <span id="resultO">0</span>
+    </div>
+    <h2 id="playersTurn"></h2>
+    <div class="container" id="board" >
+        <audio src="Audio/audio.wav" id="audio"></audio>
+        <div data-box-index="1" id="box1" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="2" id="box2" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="3" id="box3" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="4" id="box4" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="5" id="box5" class="box" onClick="player(this.id)"></div>
+        <div data-box9-index="6" id="box6" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="7" id="box7" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="8" id="box8" class="box" onClick="player(this.id)"></div>
+        <div data-box-index="9" id="box9" class="box" onClick="player(this.id)"></div>
+    </div>
+    <div class="btnGrp">
+       
+       
+        <button type="reset" class="btnStyle" onclick="reset()">Reset</button>
+        
+        <h1 id="result"></h1>
+        
+       
+        <button type="reset" class="btnStyle"  onclick="newGame()">New Game</button>
+   
+
+    </div>
+   
+    <script src="./ticTacToe.js"></script>
+</body>
+</html>
